@@ -8,14 +8,30 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var store: AppStore = AppStore(initialState: AppState(),
+                                                reducer: AppReducer.shared.appReducer)
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationView {
+            List {
+                ForEach(store.appState.items, id: \.self) { item in
+                    Text(item)
+                }
+            }
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button("Delete") {
+                        store.reduce(action: .deleteItems)
+                    }
+                }
+                
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button("Add") {
+                        store.reduce(action: .loadItems)
+                    }
+                }
+            }
+            .navigationTitle("Items")
         }
-        .padding()
     }
 }
 

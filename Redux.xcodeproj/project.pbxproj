@@ -11,6 +11,10 @@
 		6D4BB6452B470C1500F56355 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4BB6442B470C1500F56355 /* ContentView.swift */; };
 		6D4BB6472B470C1600F56355 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D4BB6462B470C1600F56355 /* Assets.xcassets */; };
 		6D4BB64A2B470C1600F56355 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D4BB6492B470C1600F56355 /* Preview Assets.xcassets */; };
+		6D4BB6512B47109900F56355 /* AppStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4BB6502B47109900F56355 /* AppStore.swift */; };
+		6D4BB6532B4710CF00F56355 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4BB6522B4710CF00F56355 /* AppState.swift */; };
+		6D4BB6552B4710DE00F56355 /* AppAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4BB6542B4710DE00F56355 /* AppAction.swift */; };
+		6D4BB6572B47114100F56355 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4BB6562B47114100F56355 /* AppReducer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		6D4BB6442B470C1500F56355 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6D4BB6462B470C1600F56355 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6D4BB6492B470C1600F56355 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6D4BB6502B47109900F56355 /* AppStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStore.swift; sourceTree = "<group>"; };
+		6D4BB6522B4710CF00F56355 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		6D4BB6542B4710DE00F56355 /* AppAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAction.swift; sourceTree = "<group>"; };
+		6D4BB6562B47114100F56355 /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +63,10 @@
 				6D4BB6442B470C1500F56355 /* ContentView.swift */,
 				6D4BB6462B470C1600F56355 /* Assets.xcassets */,
 				6D4BB6482B470C1600F56355 /* Preview Content */,
+				6D4BB6502B47109900F56355 /* AppStore.swift */,
+				6D4BB6522B4710CF00F56355 /* AppState.swift */,
+				6D4BB6542B4710DE00F56355 /* AppAction.swift */,
+				6D4BB6562B47114100F56355 /* AppReducer.swift */,
 			);
 			path = Redux;
 			sourceTree = "<group>";
@@ -137,8 +149,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D4BB6572B47114100F56355 /* AppReducer.swift in Sources */,
+				6D4BB6512B47109900F56355 /* AppStore.swift in Sources */,
 				6D4BB6452B470C1500F56355 /* ContentView.swift in Sources */,
+				6D4BB6552B4710DE00F56355 /* AppAction.swift in Sources */,
 				6D4BB6432B470C1500F56355 /* ReduxApp.swift in Sources */,
+				6D4BB6532B4710CF00F56355 /* AppState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
